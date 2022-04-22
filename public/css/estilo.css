@@ -1,0 +1,57 @@
+#labelespaco{
+    margin-top: -30px;
+}
+#inputblock{
+    background-color: #daf4fd;
+}
+hr {
+    background-color:#c5d1d9;
+    height: 1px;
+   
+}
+
+#inforedefinirsenha{
+    font-size:20px;
+    text-align:center;
+}
+
+#cabecatabela{
+    background-color:#3bafda;
+    color:#ffffff;
+}
+
+#logando{
+    width: 50px;
+    height: 50px;
+    margin-left: 150px;
+    display: none;
+}
+
+.descricaoSugestao{
+    margin-bottom: -30px;
+}
+
+
+.descricaoSugestao h5{
+    text-align: center;
+    font-size: medium;
+}
+
+.table-title{
+    text-align: center;
+    margin-top: -5px;
+    margin-bottom: 10px;
+    color:#3bafda;
+}
+
+.tabelaClicked:hover{
+    background: #c8d9e8;
+}
+
+#cabeca-modal{
+    background-color:#1abc9c;
+}
+
+#cabeca-modal h4{
+   color:white;
+}
