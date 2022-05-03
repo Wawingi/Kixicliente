@@ -15,14 +15,13 @@ class UtilizadorController extends Controller
         $user = User::where('username', $request->username)
                   ->where('password',sha1($request->password))
                   ->first();
-dd($user);
+
         if (is_object($user)){
-            $info = 1;
             Auth::login($user);
-        }else{
-            $info = 0;
+            return redirect()->intended('home');
+        } else {
+            return redirect()->intended('/');
         }
-        echo $info;
     }
 
 
@@ -40,15 +39,17 @@ dd($user);
                 ]
             ]);
             
-            $user = json_decode($response->getBody());    
+            $user = json_decode($response->getBody());   
+            
             
             if($response->getStatusCode() == "200"){
-                if(is_object($user)){
-                    Auth::login($user);
-                    echo 1;
-                }else{
-                    echo 0;
-                } 
+                //if(is_object($user)){ 
+                    //dd($user);
+                    Auth::login($user,true);
+                    return redirect()->intended('home');
+                //}else{
+                    return redirect()->intended('/');
+                //} 
             }else{
                 echo 0;
             }

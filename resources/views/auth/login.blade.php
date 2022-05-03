@@ -6,7 +6,7 @@
             <div class="col-md-8 col-lg-6 col-xl-5">
                 <div class="card">
                     <div class="card-body p-4">
-                        <form id="formularioLogarr" action="{{ url('logar') }}" method="post">
+                        <form action="{{ url('logar') }}" method="post">
                             @csrf
                             <div class="text-center">
                                 <h3><img height="55" src="{{url('images/logo.png')}}"></h3>
