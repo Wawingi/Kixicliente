@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+Use Exception;
 
 class ClienteController extends Controller
 {
@@ -54,4 +55,28 @@ class ClienteController extends Controller
 
         return view('clientes.clientesTable',compact('clientes'));
     }
+
+    //API para armazenar clientes vindo da consolidado 
+    public function registarClientesAPI(Request $request){
+        try{
+            if(DB::table('cliente')->insert([ 
+                'codigo_credito' => $request->codigo_credito,
+                'codigo_membro' => $request->codigo_membro, 
+                'data_actualizacao' => $request->data_actualizacao,         
+                'loan_number' => $request->loan_number,            
+                'nome' => $request->nome,          
+                'telefone1' => $request->telefone1,
+                'telefone2' => $request->telefone2,
+                'bilhete' => $request->bilhete,
+                'created_at' => date('Ymd H:i:s'),
+                'updated_at' => date('Ymd H:i:s')
+            ])){
+                return response()->json(1);
+            }else{
+                return response()->json(0);
+            }
+        } catch (Exception $e){
+            return response()->json(0);
+        }
+    } 
 }

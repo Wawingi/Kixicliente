@@ -1,18 +1,18 @@
 <header id="topnav">
     <!-- Inicio TopBar -->
-    <div style="background-color:#1abc9c" class="navbar-custom">
+    <div style="background-color:#0f5b3b" class="navbar-custom">
         <div class="container-fluid">
 
             <!-- LOGO -->
             <div class="logo-box">
                 <a href="{{ url('home') }}" class="logo text-center">
                     <span class="logo-lg">
-                        <img src="{{ url('images/logo.png') }}" alt="" height="44">
+                        <img src="{{ url('images/logo2.png') }}" alt="" height="44">
                         <!-- <span class="logo-lg-text-light">Xeria</span> -->
                     </span>
                     <span class="logo-sm">
                         <!-- <span class="logo-sm-text-dark">X</span> -->
-                        <img src="{{ url('images/logo.png') }}" alt="" height="24">
+                        <img src="{{ url('images/logo2.png') }}" alt="" height="24">
                     </span>
                 </a>
             </div>
