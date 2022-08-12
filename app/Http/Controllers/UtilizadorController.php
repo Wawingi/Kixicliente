@@ -2,9 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use Session;
 use Illuminate\Http\Request;
 use App\User;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Foundation\Auth\User as Authenticatable;   
+//use Illuminate\Foundation\Auth\AuthenticatesUsers;
+use Illuminate\Support\Facades\DB;
 use GuzzleHttp\Client;
 
 
@@ -13,10 +17,10 @@ class UtilizadorController extends Controller
     //Logar apartir do sistema interno
     public function logar(Request $request){
         $user = User::where('username', $request->username)
-                  ->where('password',sha1($request->password))
-                  ->first();
-
-        if (is_object($user)){
+                ->where('password',sha1($request->password))
+                ->first();
+                  
+        if(is_object($user)){
             Auth::login($user);
             return redirect()->intended('home');
         } else {
@@ -38,20 +42,21 @@ class UtilizadorController extends Controller
                     'password' => $request->password
                 ]
             ]);
-            
-            $user = json_decode($response->getBody());   
-            
+            $user = json_decode($response->getBody());             
             
             if($response->getStatusCode() == "200"){
-                //if(is_object($user)){ 
-                    //dd($user);
-                    Auth::login($user,true);
-                    return redirect()->intended('home');
-                //}else{
+                if(is_object($user)){ 
+                    Session::put('user',$user);
+                    if(Session::has('user')){
+                        return redirect()->intended('home');
+                    }else{
+                        return redirect()->intended('/');
+                    }                      
+                }else{
                     return redirect()->intended('/');
-                //} 
+                } 
             }else{
-                echo 0;
+                return redirect()->intended('/');
             }
         } catch (RequestException $e) {
             echo GuzzleHttp\Psr7\str($e->getRequest());
@@ -62,7 +67,8 @@ class UtilizadorController extends Controller
     }
 
     public function logout(){
-        Auth::logout();
+        //Auth::logout();
+        Session::flush();
         return redirect()->intended('/');
     }
 }

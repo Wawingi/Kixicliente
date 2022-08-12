@@ -7,12 +7,12 @@
             <div class="logo-box">
                 <a href="{{ url('home') }}" class="logo text-center">
                     <span class="logo-lg">
-                        <img src="{{ url('images/logo2.png') }}" alt="" height="44">
+                        <img src="{{ url('images/logoIN.png') }}" alt="" height="48">
                         <!-- <span class="logo-lg-text-light">Xeria</span> -->
                     </span>
                     <span class="logo-sm">
                         <!-- <span class="logo-sm-text-dark">X</span> -->
-                        <img src="{{ url('images/logo2.png') }}" alt="" height="24">
+                        <img src="{{ url('images/logoIN.png') }}" alt="" height="24">
                     </span>
                 </a>
             </div>
@@ -34,12 +34,12 @@
                 <li id="notificacaoTable" class="dropdown notification-list">
                     <!--Notificações serão exibidas aqui-->
                 </li>
-
+        
                 <li class="dropdown notification-list">
                     <a class="nav-link dropdown-toggle nav-user mr-0 waves-effect waves-light" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
-                        <img src="{{ url('images/fotos/'.Auth::user()->foto) }}" alt="user-image" class="rounded-circle">
+                        <img src="{{ url('images/fotos/'.Session::get('user')->foto) }}" alt="user-image" class="rounded-circle">
                         <span class="pro-user-name ml-1">
-                        {{Auth::user()->name}} <i class="mdi mdi-chevron-down"></i><br>
+                        {{Session::get('user')->name}} <i class="mdi mdi-chevron-down"></i><br>
                         </span>
                     </a>
                     <div class="dropdown-menu dropdown-menu-right profile-dropdown ">
@@ -94,6 +94,17 @@
                             </li>
                             <li>
                                 <a href="#" data-backdrop="static" data-keyboard="false" data-toggle="modal" data-target="#exampleModalScrollable"><i class="fas fa-money-check-alt mr-1"></i>CIRC Interno</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="has-submenu">
+                        <a href="#">
+                            <i class="fas fa-cogs"></i>Configurações<div class="arrow-down"></div>
+                        </a>
+                        <ul class="submenu">
+                            <li>
+                                <a href="{{ url('uploadClientes') }}"><i class="fas fa-file-import mr-1"></i>Carregar Dados</a>
                             </li>
                         </ul>
                     </li>

@@ -46,8 +46,11 @@
                                 <tr style="text-align:center">
                                     <th>#</th>
                                     <th>Loan Number</th>
+                                    <th>Código de Crédito</th>
                                     <th>Nome</th>                               
-                                    <th>Data de Actualização</th>
+                                    <th>Data de Desembolso</th>
+                                    <th>Estado</th>
+                                    <th></th>
                                 </tr>
                             </thead>
                             <tbody id="tableClientes">                          
@@ -61,104 +64,114 @@
     </div> 
 </div>
 <script>
-    // Validação do formulário do docente
-    $("#validarForm").validate({
-		rules: {					
-			loan: {
-                minlength:4
-			},
-			nome: {
-				minlength:3,
-                pattern: /^[a-zA-ZáÁàÀçÇéÉèÈíÍìÌõÕóÓãÃúÚ\s]+$/
-			},
-			bilhete: {
-				minlength:7
-			},
-            telefone: {
-				minlength:5
-			}
-        },
-		messages: {	
-            loan: {
-				minlength: "O valor mínimo deve ser 4 digitos"
-			},				
-			nome: {
-                minlength: "O valor mínimo deve ser 7 digitos",
-                pattern: "Informe um nome válido contendo apenas letras alfabéticas"
-			},
-			bilhete: {
-                minlength: "O valor mínimo deve ser 7 digitos"
-			},            
-            telefone: {
-				minlength: "O valor mínimo deve ser 5 digitos"
-			}
-		},
-		errorElement: "em",
-		errorPlacement: function ( error, element ) {
-			// Add the `invalid-feedback` class to the error element
-			error.addClass( "invalid-feedback" );
-			if ( element.prop( "type" ) === "checkbox" ) {
-				error.insertAfter( element.next( "label" ) );
-			} else {
-				error.insertAfter( element );
-			}
-		},
-		highlight: function ( element, errorClass, validClass ) {
-			$( element ).addClass( "is-invalid" ).removeClass( "is-valid" );
-		},
-		unhighlight: function (element, errorClass, validClass) {
-			$( element ).addClass( "is-valid" ).removeClass( "is-invalid" );
-		},
+    $('#formularioSalvar').submit(function(e){
+        e.preventDefault();
+        var request = new FormData(this);
+        var tipo = request.get('tipo');
+        var bi = request.get('bilhete');
+        var nome = request.get('nome');
+        var telefone = request.get('telefone');
+        var loan = request.get('loan');
 
-        submitHandler: function(validarForm,e){  			
-            e.preventDefault();
-            $.ajax({
-                headers:{
-                    'X-CSRF-TOKEN':'<?php echo csrf_token() ?>'
-                },
-                url:"{{ url('pesquisarCliente') }}",
-                method: "POST",
-                data: $("#validarForm").serialize(),
-                success:function(data){
-                    if(data==0){
-                        Swal.fire({
-                            text: "Preencha pelo menos um campo.",
-                            icon: 'error',
-                            confirmButtonText: 'Fechar'
-                        }),
-                        exit;
-                    }
-                    if(data==1){
-                        Swal.fire({
-                            text: "Nenhum dado ncontrado. Verificque o dado de entrada e tente novamente.",
-                            icon: 'error',
-                            confirmButtonText: 'Fechar'
-                        }),
-                        exit;
-                    }
-                    if(data==2){
-                        Swal.fire({
-                            text: "Informe um nome válido separado por espaço.",
-                            icon: 'error',
-                            confirmButtonText: 'Fechar'
-                        }),
-                        exit;
-                    }
-
-                    console.log("AQUI: "+data);
-
-                    $('#tableClientes').html(data);
-                    $('#paginationClientes').DataTable({
-                        "pagingType": "full_numbers"
-                    });
-                    $('#modalClose').click();
-                    $('#validarForm')[0].reset();          
-                },
-                error: function(response){
-					
-                }
-            });
+        if(!bi && !nome && !telefone && !loan){
+            Swal.fire({
+                text: "Informe pelo menos um valor para realizar a pesquisa.",
+                icon: 'error',
+                confirmButtonText: 'Fechar'
+            }),
+            exit;
         }
-    });
+
+        if(bi.length<7 && tipo==1){
+            Swal.fire({
+                text: "O valor mínimo do bilhete deve ser de 7 caractéres.",
+                icon: 'error',
+                confirmButtonText: 'Fechar'
+            }),
+            exit;
+        }
+
+        if(nome.length<3 && tipo==2){
+            Swal.fire({
+                text: "O valor mínimo do nome deve ser de 3 caractéres.",
+                icon: 'error',
+                confirmButtonText: 'Fechar'
+            }),
+            exit;
+        }
+
+        if(tipo==2){
+            var regex = /^[a-zA-ZáÁàÀçÇéÉèÈíÍìÌõÕóÓãÃúÚ\s]+$/;                
+			if(regex.test(nome) === false) {
+                Swal.fire({
+                    text: "Informe um nome.",
+                    icon: 'error',
+                    confirmButtonText: 'Fechar'
+                }),
+                exit;
+            }
+        }
+
+        if(telefone.length<5 && tipo==3){
+            Swal.fire({
+                text: "O valor mínimo para o campo telefone deve ser de 5 dígitos.",
+                icon: 'error',
+                confirmButtonText: 'Fechar'
+            }),
+            exit;
+        }
+        
+        if(loan.length<4 && tipo==4){
+            Swal.fire({
+                text: "O valor mínimo para o loan number deve ser de 4 caractéres.",
+                icon: 'error',
+                confirmButtonText: 'Fechar'
+            }),
+            exit;
+        }
+
+        $.ajax({
+            url:"{{ url('pesquisarCliente') }}",
+            type: "POST",
+            data: request,
+            contentType: false,
+            cache: false,
+            processData: false,
+            success:function(data){
+                if(data==1){
+                    Swal.fire({
+                        text: "Nenhum dado encontrado. Verifique o dado de entrada e tente novamente.",
+                        icon: 'error',
+                        confirmButtonText: 'Fechar'
+                    })
+                    exit;
+                }
+                if(data==2){
+                    Swal.fire({
+                        text: "Informe um nome válido separado por espaço.",
+                        icon: 'error',
+                        confirmButtonText: 'Fechar'
+                    })
+                    exit;
+                }
+
+                $('#tableClientes').html(data);
+                $('#paginationClientes').DataTable({
+                        "pagingType": "full_numbers"
+                });
+                $('#modalClose').click();
+                $('#validarForm')[0].reset();                          
+            },
+            error: function(e){
+                /*$("#modalRejeitarClose").click();
+                $('#formularioSalvar')[0].reset();
+                Swal.fire({
+                    text: 'Ocorreu um erro ao registar.',
+                    icon: 'error',
+                    confirmButtonText: 'Fechar'
+                })*/
+            }
+        });
+    });    
 </script>
 @stop

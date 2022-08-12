@@ -27,7 +27,7 @@
                             <div class="col-5">
                                 <img    
                                     style="border:solid #6c757d 1px"                       
-                                    src="{{ url('images/fotos/'.Auth::user()->foto) }}"
+                                    src="{{ url('images/fotos/'.Session::get('user')->foto) }}"
                                     alt="user-image"
                                     class="rounded-circle"
                                     width="180px"
@@ -35,10 +35,10 @@
                                 />
                             </div>
                             <div class="col-7">
-                                <p><i class="mdi mdi-account-circle-outline"></i> {{Auth::user()->name}}</p>
-                                <p><i class="mdi mdi-shield-account"></i> {{Auth::user()->username}}</p>
-                                <p><i class="mdi mdi-email"></i> {{Auth::user()->email}}</p>
-                                <p><i class="mdi mdi-office-building"></i> {{Auth::user()->departamento}}</p>
+                                <p><i class="mdi mdi-account-circle-outline"></i> {{Session::get('user')->name}}</p>
+                                <p><i class="mdi mdi-shield-account"></i> {{Session::get('user')->username}}</p>
+                                <p><i class="mdi mdi-email"></i> {{Session::get('user')->email}}</p>
+                                <p><i class="mdi mdi-office-building"></i> {{Session::get('user')->departamento}}</p>
                             </div>
                         </div>
                         <br />

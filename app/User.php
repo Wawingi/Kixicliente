@@ -2,7 +2,7 @@
 
 namespace App;
 
-use Illuminate\Contracts\Auth\MustVerifyEmail;
+//use Illuminate\Contracts\Auth\MustVerifyEmail;
 //use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use GoldSpecDigital\LaravelEloquentUUID\Database\Eloquent\Uuid;
@@ -14,6 +14,7 @@ class User extends Authenticatable
     use Notifiable;
 
     protected $table='users';
+    //protected $guard = 'admin';
 
     /**
      * The attributes that are mass assignable.

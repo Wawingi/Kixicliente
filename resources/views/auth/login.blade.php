@@ -4,7 +4,7 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-8 col-lg-6 col-xl-5">
-                <div class="card">
+                <div style="box-shadow:2px 2px 5px #1abc9c" class="card">
                     <div class="card-body p-4">
                         <form action="{{ url('logar') }}" method="post">
                             @csrf

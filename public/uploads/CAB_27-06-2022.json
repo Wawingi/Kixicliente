@@ -1,0 +1,554 @@
+[
+    {
+        "CeGeneral": "AC\/I\/K0843",
+        "Nome": "Jos\u00e9 Jo\u00e3o Iava",
+        "CeTelefono": "919715400",
+        "CeTelefono2": "939715400",
+        "BI": "004918821LN048",
+        "Carrega": "1"
+    },
+    {
+        "CeGeneral": "AC\/I\/K0852",
+        "Nome": "Yuri Ant\u00f3nio Estev\u00e3o de Castro",
+        "CeTelefono": "947572755",
+        "CeTelefono2": "",
+        "BI": "005790063UE047",
+        "Carrega": "1"
+    },
+    {
+        "CeGeneral": "AC\/I\/KG357",
+        "Nome": "Gil Hebo Domingos",
+        "CeTelefono": "923849949",
+        "CeTelefono2": "922078692",
+        "BI": "001900032KN039",
+        "Carrega": "1"
+    },
+    {
+        "CeGeneral": "AC\/I\/KG883",
+        "Nome": "Francisco Domingos Ribeiro",
+        "CeTelefono": "938463587",
+        "CeTelefono2": "",
+        "BI": "008186238ME046",
+        "Carrega": "1"
+    },
+    {
+        "CeGeneral": "AC\/I\/KH412",
+        "Nome": "Wilson Augusto Chihinga",
+        "CeTelefono": "921767946",
+        "CeTelefono2": "",
+        "BI": "005200118CC040",
+        "Carrega": "1"
+    },
+    {
+        "CeGeneral": "AC\/I\/KN385",
+        "Nome": "Augusto Francisco Matias",
+        "CeTelefono": "929106676",
+        "CeTelefono2": "",
+        "BI": "000387313LA030",
+        "Carrega": "1"
+    },
+    {
+        "CeGeneral": "BE\/I\/K0227",
+        "Nome": "Ana Pedro Malungo",
+        "CeTelefono": "930765497",
+        "CeTelefono2": "",
+        "BI": "000959070UE039",
+        "Carrega": "1"
+    },
+    {
+        "CeGeneral": "BE\/I\/K0228",
+        "Nome": "Fernando Miguel Dias Silveira",
+        "CeTelefono": "926700183",
+        "CeTelefono2": "",
+        "BI": "",
+        "Carrega": "1"
+    },
+    {
+        "CeGeneral": "BE\/I\/K3086",
+        "Nome": "Jos\u00e9 Fernando Chipaco",
+        "CeTelefono": "930929138",
+        "CeTelefono2": "990929138",
+        "BI": "001273879HO033",
+        "Carrega": "1"
+    },
+    {
+        "CeGeneral": "BE\/I\/K3092",
+        "Nome": "Manuel Lukembe",
+        "CeTelefono": "923368903",
+        "CeTelefono2": "996463175",
+        "BI": "004880407BA045",
+        "Carrega": "1"
+    },
+    {
+        "CeGeneral": "CA\/I\/K0172",
+        "Nome": "Jo\u00e3o Sita",
+        "CeTelefono": "932189492",
+        "CeTelefono2": "946968816",
+        "BI": "002631693CA038",
+        "Carrega": "1"
+    },
+    {
+        "CeGeneral": "CA\/I\/K0300",
+        "Nome": "Pedro Gomes",
+        "CeTelefono": "935002082",
+        "CeTelefono2": "935002082",
+        "BI": "000142341CA012",
+        "Carrega": "1"
+    },
+    {
+        "CeGeneral": "CA\/I\/K0344",
+        "Nome": "Rafael. Matona",
+        "CeTelefono": "934321453",
+        "CeTelefono2": "913006903",
+        "BI": "000448407CA035",
+        "Carrega": "1"
+    },
+    {
+        "CeGeneral": "CA\/I\/K0360",
+        "Nome": "Pascoalina Sungo Santo",
+        "CeTelefono": "921066874",
+        "CeTelefono2": "",
+        "BI": "000087022CA024",
+        "Carrega": "1"
+    },
+    {
+        "CeGeneral": "CA\/I\/K1631",
+        "Nome": "Jo\u00e3o Maria Batiamuka Kabanda",
+        "CeTelefono": "941784821",
+        "CeTelefono2": "926623828",
+        "BI": "003341162CA030",
+        "Carrega": "1"
+    },
+    {
+        "CeGeneral": "CA\/M\/K1626",
+        "Nome": "Ant\u00f3nio Luemba",
+        "CeTelefono": "932904390",
+        "CeTelefono2": "918043046",
+        "BI": "000693935CA031",
+        "Carrega": "1"
+    },
+    {
+        "CeGeneral": "CA\/M\/K3310",
+        "Nome": "Paula Rosa Ndembe Gomes",
+        "CeTelefono": "933158448",
+        "CeTelefono2": "933158448",
+        "BI": "003164662CA035",
+        "Carrega": "1"
+    },
+    {
+        "CeGeneral": "HH\/I\/K2673",
+        "Nome": "Nsuele Helena Jo\u00e3o",
+        "CeTelefono": "925169224",
+        "CeTelefono2": "",
+        "BI": "000193127ZE037",
+        "Carrega": "1"
+    },
+    {
+        "CeGeneral": "HH\/I\/K2679",
+        "Nome": "Catarina Kediamosiko",
+        "CeTelefono": "925960949",
+        "CeTelefono2": "932774580",
+        "BI": "004719551ZE047",
+        "Carrega": "1"
+    },
+    {
+        "CeGeneral": "HH\/I\/K2694",
+        "Nome": "Domingos Canda Jones",
+        "CeTelefono": "946688360",
+        "CeTelefono2": "946088316",
+        "BI": "000080601UE039",
+        "Carrega": "1"
+    },
+    {
+        "CeGeneral": "HH\/I\/K2732",
+        "Nome": "Maria Elizeth Caetano Ant\u00f3nio",
+        "CeTelefono": "925155654",
+        "CeTelefono2": "923463963",
+        "BI": "000146829LA037",
+        "Carrega": "1"
+    },
+    {
+        "CeGeneral": "HU\/I\/K0618",
+        "Nome": "Em\u00edlia Chulo",
+        "CeTelefono": "927069930",
+        "CeTelefono2": "",
+        "BI": "",
+        "Carrega": "1"
+    },
+    {
+        "CeGeneral": "HU\/I\/K0627",
+        "Nome": "Daniel Kalufele",
+        "CeTelefono": "935420765",
+        "CeTelefono2": "929111070",
+        "BI": "003821373HO039",
+        "Carrega": "1"
+    },
+    {
+        "CeGeneral": "HU\/M\/K3723",
+        "Nome": "Joaquim Cachipui Cassoma",
+        "CeTelefono": "923707474",
+        "CeTelefono2": "940285060",
+        "BI": "",
+        "Carrega": "1"
+    },
+    {
+        "CeGeneral": "HU\/M\/K4239",
+        "Nome": "Armanda Cacului",
+        "CeTelefono": "935944058",
+        "CeTelefono2": "",
+        "BI": "001789841HO038",
+        "Carrega": "1"
+    },
+    {
+        "CeGeneral": "KK\/I\/K1602",
+        "Nome": "Mariquinha Ant\u00f3nio Janu\u00e1rio",
+        "CeTelefono": "936104090",
+        "CeTelefono2": "923425316",
+        "BI": "000938818LA035",
+        "Carrega": "1"
+    },
+    {
+        "CeGeneral": "KK\/M\/K6248",
+        "Nome": "Jos\u00e9 Pedro",
+        "CeTelefono": "925805255",
+        "CeTelefono2": "940902351",
+        "BI": "000195351LA031",
+        "Carrega": "1"
+    },
+    {
+        "CeGeneral": "KT\/I\/K1360",
+        "Nome": "Nat\u00e1lia Mois\u00e9s",
+        "CeTelefono": "936617102",
+        "CeTelefono2": "",
+        "BI": "006616910CC046",
+        "Carrega": "1"
+    },
+    {
+        "CeGeneral": "KT\/I\/K1504",
+        "Nome": "M\u00e1rio Cl\u00e1udio Musseheno",
+        "CeTelefono": "927985154",
+        "CeTelefono2": "",
+        "BI": "005503904MO048",
+        "Carrega": "1"
+    },
+    {
+        "CeGeneral": "KT\/I\/K1514",
+        "Nome": "Jo\u00e3o Comba Camango",
+        "CeTelefono": "921812244",
+        "CeTelefono2": "",
+        "BI": "007963175LN047",
+        "Carrega": "1"
+    },
+    {
+        "CeGeneral": "KT\/I\/K1521",
+        "Nome": "Delfina Samuel Dendelai",
+        "CeTelefono": "931062563",
+        "CeTelefono2": "",
+        "BI": "006480271MO047",
+        "Carrega": "1"
+    },
+    {
+        "CeGeneral": "KT\/I\/K1537",
+        "Nome": "Madalena Cassongo Ndala",
+        "CeTelefono": "926917759",
+        "CeTelefono2": "",
+        "BI": "046618051BE042",
+        "Carrega": "1"
+    },
+    {
+        "CeGeneral": "KT\/M\/K3197",
+        "Nome": "Ant\u00f3nio Tungavo",
+        "CeTelefono": "931107481",
+        "CeTelefono2": "",
+        "BI": "005025717ZE045",
+        "Carrega": "1"
+    },
+    {
+        "CeGeneral": "KT\/M\/K4657",
+        "Nome": "Calongolo Lucas",
+        "CeTelefono": "930194987",
+        "CeTelefono2": "",
+        "BI": "001287867CC030",
+        "Carrega": "1"
+    },
+    {
+        "CeGeneral": "KT\/M\/K4658",
+        "Nome": "Maria Kassela",
+        "CeTelefono": "928946224",
+        "CeTelefono2": "",
+        "BI": "001745434CC031",
+        "Carrega": "1"
+    },
+    {
+        "CeGeneral": "KT\/M\/K4659",
+        "Nome": "Jo\u00e3o Matias",
+        "CeTelefono": "928946224",
+        "CeTelefono2": "",
+        "BI": "000207449CC039",
+        "Carrega": "1"
+    },
+    {
+        "CeGeneral": "KT\/M\/K4660",
+        "Nome": "Raquel Ndandula",
+        "CeTelefono": "931955319",
+        "CeTelefono2": "",
+        "BI": "007459273CC047",
+        "Carrega": "1"
+    },
+    {
+        "CeGeneral": "KT\/M\/K4661",
+        "Nome": "Licumbi Muenda",
+        "CeTelefono": "931955319",
+        "CeTelefono2": "",
+        "BI": "008339455CC042",
+        "Carrega": "1"
+    },
+    {
+        "CeGeneral": "LB\/I\/K2229",
+        "Nome": "Jos\u00e9 Afonso L\u00e1zaro",
+        "CeTelefono": "923201444",
+        "CeTelefono2": "924170870",
+        "BI": "000660992HA033",
+        "Carrega": "1"
+    },
+    {
+        "CeGeneral": "LB\/I\/K2293",
+        "Nome": "Sebasti\u00e3o Pedro",
+        "CeTelefono": "927441108",
+        "CeTelefono2": "",
+        "BI": "000250560UE014",
+        "Carrega": "1"
+    },
+    {
+        "CeGeneral": "LB\/I\/K2326",
+        "Nome": "Juliana Donana",
+        "CeTelefono": "946002879",
+        "CeTelefono2": "926732660",
+        "BI": "005588891HA040",
+        "Carrega": "1"
+    },
+    {
+        "CeGeneral": "LB\/I\/K2362",
+        "Nome": "Jos\u00e9 Jai Canjongo",
+        "CeTelefono": "927238406",
+        "CeTelefono2": "945402393",
+        "BI": "003603772HA036",
+        "Carrega": "1"
+    },
+    {
+        "CeGeneral": "LB\/I\/K2420",
+        "Nome": "Jos\u00e9 Ant\u00f3nio Kayove",
+        "CeTelefono": "923980388",
+        "CeTelefono2": "923358455",
+        "BI": "001582800HA039",
+        "Carrega": "1"
+    },
+    {
+        "CeGeneral": "LB\/M\/K9342",
+        "Nome": "Emilia Adelina",
+        "CeTelefono": "938991335",
+        "CeTelefono2": "",
+        "BI": "",
+        "Carrega": "1"
+    },
+    {
+        "CeGeneral": "LB\/M\/KA987",
+        "Nome": "L\u00facia Jinga Mandavela",
+        "CeTelefono": "936308104",
+        "CeTelefono2": "",
+        "BI": "",
+        "Carrega": "1"
+    },
+    {
+        "CeGeneral": "LB\/M\/KB265",
+        "Nome": "Jos\u00e9 Manuel Paulino Dangala",
+        "CeTelefono": "925214108",
+        "CeTelefono2": "",
+        "BI": "006984249HA045",
+        "Carrega": "1"
+    },
+    {
+        "CeGeneral": "MB\/I\/K0407",
+        "Nome": "Zibelina Vunza Lunssa\u00e7o Panzo",
+        "CeTelefono": "923909438",
+        "CeTelefono2": "",
+        "BI": "004857436UE043",
+        "Carrega": "1"
+    },
+    {
+        "CeGeneral": "MB\/I\/K0463",
+        "Nome": "Tazi Muanga Afonso",
+        "CeTelefono": "923320510",
+        "CeTelefono2": "",
+        "BI": "002935039UE038",
+        "Carrega": "1"
+    },
+    {
+        "CeGeneral": "NB\/I\/K0342",
+        "Nome": "Maria Suzana Catarina",
+        "CeTelefono": "927739591",
+        "CeTelefono2": "924565231",
+        "BI": "005002366NE040",
+        "Carrega": "1"
+    },
+    {
+        "CeGeneral": "NB\/I\/K0376",
+        "Nome": "Miguel Costa Jamba",
+        "CeTelefono": "924962608",
+        "CeTelefono2": "",
+        "BI": "001474356HA037",
+        "Carrega": "1"
+    },
+    {
+        "CeGeneral": "NB\/I\/K0422",
+        "Nome": "Elias Cawala Tchissanga",
+        "CeTelefono": "946455051",
+        "CeTelefono2": "",
+        "BI": "001029635NE032",
+        "Carrega": "1"
+    },
+    {
+        "CeGeneral": "NB\/I\/K0424",
+        "Nome": "Isabel Candeia",
+        "CeTelefono": "943445135",
+        "CeTelefono2": "",
+        "BI": "005631600HO048",
+        "Carrega": "1"
+    },
+    {
+        "CeGeneral": "NB\/I\/K1193",
+        "Nome": "Helder Emanuel De Freita N\u00f3brega",
+        "CeTelefono": "922856520",
+        "CeTelefono2": "",
+        "BI": "007427763HA047",
+        "Carrega": "1"
+    },
+    {
+        "CeGeneral": "NB\/I\/K1280",
+        "Nome": "Mur\u00fazia Ntoto Kumbundu",
+        "CeTelefono": "936458162",
+        "CeTelefono2": "",
+        "BI": "005275915NE046",
+        "Carrega": "1"
+    },
+    {
+        "CeGeneral": "NB\/I\/K1293",
+        "Nome": "Teresa Maria Himovali",
+        "CeTelefono": "923704096",
+        "CeTelefono2": "",
+        "BI": "000138129CE019",
+        "Carrega": "1"
+    },
+    {
+        "CeGeneral": "NB\/I\/K1331",
+        "Nome": "Pedro Gonsalves",
+        "CeTelefono": "923247622",
+        "CeTelefono2": "",
+        "BI": "000767260ZE038",
+        "Carrega": "1"
+    },
+    {
+        "CeGeneral": "NB\/I\/K1440",
+        "Nome": "Salu Leopoldo M. Fernandes Haufiku",
+        "CeTelefono": "939630128",
+        "CeTelefono2": "",
+        "BI": "001830075HA039",
+        "Carrega": "1"
+    },
+    {
+        "CeGeneral": "NB\/M\/K2058",
+        "Nome": "Joana Catumbo",
+        "CeTelefono": "935804136",
+        "CeTelefono2": "",
+        "BI": "001067690HA031",
+        "Carrega": "1"
+    },
+    {
+        "CeGeneral": "NB\/M\/K4956",
+        "Nome": "Mafo Ana Tomas Caiombo",
+        "CeTelefono": "927543616",
+        "CeTelefono2": "",
+        "BI": "006144731NE042",
+        "Carrega": "1"
+    },
+    {
+        "CeGeneral": "NB\/M\/K6257",
+        "Nome": "Joaquim Satchimbundo Bulu",
+        "CeTelefono": "935726377",
+        "CeTelefono2": "",
+        "BI": "009037156NE045",
+        "Carrega": "1"
+    },
+    {
+        "CeGeneral": "PE\/I\/K0160",
+        "Nome": "Domingas Vunge",
+        "CeTelefono": "923700040",
+        "CeTelefono2": "",
+        "BI": "000808082LA038",
+        "Carrega": "1"
+    },
+    {
+        "CeGeneral": "RN\/I\/K0073",
+        "Nome": "Benedito Agostinho Juliana",
+        "CeTelefono": "923301068",
+        "CeTelefono2": "",
+        "BI": "001685565ZE035",
+        "Carrega": "1"
+    },
+    {
+        "CeGeneral": "SB\/I\/K0478",
+        "Nome": "Euclafe Eduardo Maria Armindo",
+        "CeTelefono": "932167704",
+        "CeTelefono2": "",
+        "BI": "005421230KS044",
+        "Carrega": "1"
+    },
+    {
+        "CeGeneral": "SB\/I\/K0479",
+        "Nome": "Jo\u00e3o Baptista",
+        "CeTelefono": "929594436",
+        "CeTelefono2": "",
+        "BI": "004933987KS049",
+        "Carrega": "1"
+    },
+    {
+        "CeGeneral": "UE\/I\/K0189",
+        "Nome": "Jo\u00e3o Bige Victor",
+        "CeTelefono": "934987779",
+        "CeTelefono2": "937641201",
+        "BI": "005001791UE049",
+        "Carrega": "1"
+    },
+    {
+        "CeGeneral": "UE\/I\/K0816",
+        "Nome": "David Sumo",
+        "CeTelefono": "929612610",
+        "CeTelefono2": "927493563",
+        "BI": "004798262UE047",
+        "Carrega": "1"
+    },
+    {
+        "CeGeneral": "UE\/I\/K0851",
+        "Nome": "Kiaco Mbuta Alberto Pedro",
+        "CeTelefono": "921100493",
+        "CeTelefono2": "916961163",
+        "BI": "004631834UE047",
+        "Carrega": "1"
+    },
+    {
+        "CeGeneral": "UE\/I\/K1290",
+        "Nome": "Zola Nzambi Manuel",
+        "CeTelefono": "922168528",
+        "CeTelefono2": "933086480",
+        "BI": "002537094UE039",
+        "Carrega": "1"
+    },
+    {
+        "CeGeneral": "VI\/I\/K2412",
+        "Nome": "Madalena Alfredo Caba\u00e7a",
+        "CeTelefono": "946739747",
+        "CeTelefono2": "935255495",
+        "BI": "005223117LA041",
+        "Carrega": "1"
+    }
+]

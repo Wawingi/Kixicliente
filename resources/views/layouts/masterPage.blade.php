@@ -25,6 +25,7 @@
         <link href="{{ asset('libs/custombox/custombox.min.css') }}" rel="stylesheet" />
         <link href="{{ asset('libs/switchery/switchery.min.css') }}" rel="stylesheet" />
 		<link href="{{ asset('css/sweetalert2.min.css') }}" rel="stylesheet" type="text/css" />
+		<link href="{{ asset('css/loader.css') }}" rel="stylesheet" type="text/css" />
 		
         <script src="{{ asset('js/jquery-3.4.1.js') }}"></script>
         <script src="{{ asset('js/jquery.validate.js') }}"></script>
