@@ -27,7 +27,7 @@
                             <div class="col-5">
                                 <img    
                                     style="border:solid #6c757d 1px"                       
-                                    src="{{ url('images/fotos/'.Session::get('user')->foto) }}"
+                                    src="data:image/png;base64,{{Session::get('user')->foto }}"
                                     alt="user-image"
                                     class="rounded-circle"
                                     width="180px"

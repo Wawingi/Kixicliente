@@ -64,7 +64,7 @@
             <table width="85%" style="position:relative;margin-top:-3px" class="table tabela-relatorio">
                 <tbody>
                     <tr style="font-size:10px;border:1px solid #111">
-                        <td style="border:1px solid #111"><div style="margin:3px 0px 3px 5px"><b>Impresso por</b>: {{Auth::user()->username}} [{{date('d-m-Y H:i:s')}}]</div></td>
+                        <td style="border:1px solid #111"><div style="margin:3px 0px 3px 5px"><b>Impresso por</b>: {{Session::get('user')->username}} [{{date('d-m-Y H:i:s')}}]</div></td>
                         <td class="corAzulC" style="border:1px solid #111"><div style="margin:3px 0px 3px 5px">Fecho de: {{date('d-m-Y',strtotime("-1 days"))}}</div></td>
                         <td style="border:1px solid #111"><div style="margin:3px 0px 3px 5px">{{$cabecalho->Oficina}}</div></td>
                         <td style="border:1px solid #111"><div style="margin:3px 0px 3px 5px">Página 1 de 2</div></td>

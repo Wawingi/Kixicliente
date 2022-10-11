@@ -39,3 +39,5 @@ Route::middleware(['access'])->group(function () {
 
 Auth::routes();
 //Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('xxx/{tipo}/{num_documento}','APIController@pegaCreditosAPI')->where('num_documento', '(.*)');

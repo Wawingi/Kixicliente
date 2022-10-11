@@ -33,8 +33,8 @@ class UtilizadorController extends Controller
     public function loginAPI(Request $request){
         try {
             $client = new Client(); //GuzzleHttp\Client
-            //$url = "http://192.168.5.83:8080/kixiagenda/public/api/loginAPI"; 
-            $url = "http://kixiagenda.kixicredito.com/public/api/loginAPI";
+            $url = "http://192.168.5.83:8080/kixiagenda/public/api/loginAPI"; 
+            //$url = "http://kixiagenda.kixicredito.com/public/api/loginAPI";
 
             $response = $client->request('POST', $url, [
                 'form_params' => [

@@ -8,3 +8,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::post('registarClientesAPI','ClienteController@registarClientesAPI');
+Route::get('pegaCreditos/{tipo}/{num_documento}','APIController@pegaCreditosAPI')->where('num_documento', '(.*)');

@@ -37,7 +37,7 @@
         
                 <li class="dropdown notification-list">
                     <a class="nav-link dropdown-toggle nav-user mr-0 waves-effect waves-light" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
-                        <img src="{{ url('images/fotos/'.Session::get('user')->foto) }}" alt="user-image" class="rounded-circle">
+                        <img src="data:image/png;base64,{{Session::get('user')->foto }}" alt="user-image" class="rounded-circle">
                         <span class="pro-user-name ml-1">
                         {{Session::get('user')->name}} <i class="mdi mdi-chevron-down"></i><br>
                         </span>

@@ -14,10 +14,8 @@
                 </div>
             </div>
         </div>
-
-        
-
-        
+        <?php $n='AC/I/K0852'; ?>
+        <a href='{{url("xxx/4/{$n}")}}' class="btn btn-success btn-rounded btn-sm float-right"><i class='fas fa-eye'></i> Ver Relatório </a></td>       
         
     </div> 
 </div> 
